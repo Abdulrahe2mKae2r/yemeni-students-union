@@ -1,0 +1,349 @@
+/* 
+* Contact Page Styles for Yemeni Students' Union in Turkey - Erzurum Branch
+* Author: [Your Name]
+* Version: 1.0
+*/
+
+/* ===== CONTACT INFO SECTION ===== */
+.contact-info-section {
+  padding: 80px 0;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.contact-info-card {
+  background-color: var(--light-gray);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contact-info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contact-info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-info-card p {
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT FORM SECTION ===== */
+.contact-form-section {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.contact-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contact-form,
+.contact-map {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form .section-title,
+.contact-map .section-title {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.contact-form .section-title h2,
+.contact-map .section-title h2 {
+  font-size: 2rem;
+}
+
+.contact-form .underline,
+.contact-map .underline {
+  margin: 0;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group .required {
+  color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--medium-gray);
+  border-radius: 5px;
+  font-family: "Cairo", sans-serif;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.map-container {
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  border: none;
+}
+
+/* ===== SOCIAL MEDIA SECTION ===== */
+.social-media-section {
+  padding: 80px 0;
+}
+
+.social-media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.social-media-card {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.social-media-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow);
+}
+
+.social-media-card.facebook {
+  background-color: #3b5998;
+}
+
+.social-media-card.twitter {
+  background-color: #1da1f2;
+}
+
+.social-media-card.instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-media-card.youtube {
+  background-color: #ff0000;
+}
+
+.social-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.social-media-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT COMMITTEE SECTION ===== */
+.contact-committee-section {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.committee-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.committee-contact-card {
+  display: flex;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.committee-contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-image {
+  width: 120px;
+  min-width: 120px;
+  height: 190px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.member-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.member-position {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.member-contact a {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.member-contact a:hover {
+  color: var(--primary-color);
+}
+
+.member-contact a i {
+  margin-left: 10px;
+  color: var(--primary-color);
+}
+
+/* ===== MESSAGE MODAL ===== */
+.message-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1002;
+}
+
+.modal-content {
+  background-color: var(--secondary-color);
+  margin: 100px auto;
+  padding: 0;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  position: relative;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.modal-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--medium-gray);
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media screen and (max-width: 992px) {
+  .contact-form-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info-section,
+  .contact-form-section,
+  .social-media-section,
+  .contact-committee-section {
+    padding: 60px 0;
+  }
+
+  .committee-contact-card {
+    flex-direction: column;
+  }
+
+  .committee-contact-card .member-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-info-card,
+  .contact-form,
+  .contact-map {
+    padding: 20px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 50px auto;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+}
