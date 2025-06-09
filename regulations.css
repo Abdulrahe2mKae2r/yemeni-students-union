@@ -1,0 +1,253 @@
+/* 
+* Regulations Page Styles for Yemeni Students' Union in Turkey - Erzurum Branch
+* Author: [Your Name]
+* Version: 1.0
+*/
+
+/* ===== REGULATIONS INTRO SECTION ===== */
+.regulations-intro {
+  padding: 80px 0;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* ===== MAIN REGULATIONS SECTION ===== */
+.main-regulations {
+  padding-bottom: 80px;
+}
+
+.regulations-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.regulations-image img {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.regulations-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.regulations-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.regulations-text ul {
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+
+.regulations-text ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.download-btn {
+  margin-top: 20px;
+}
+
+.download-btn .btn i {
+  margin-left: 10px;
+}
+
+/* ===== OTHER REGULATIONS SECTION ===== */
+.other-regulations {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.regulations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.regulation-card {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.regulation-card:hover {
+  transform: translateY(-10px);
+}
+
+.regulation-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.regulation-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.regulation-content p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.regulation-content .download-btn {
+  text-align: center;
+}
+
+/* ===== AMENDMENTS SECTION ===== */
+.amendments-section {
+  padding: 80px 0;
+}
+
+.amendments-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.amendments-content p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.amendments-table {
+  overflow-x: auto;
+}
+
+.amendments-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amendments-table th,
+.amendments-table td {
+  padding: 15px;
+  text-align: right;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.amendments-table th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.amendments-table tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+.amendments-table .btn {
+  padding: 8px 15px;
+}
+
+/* ===== REGULATIONS FAQ SECTION ===== */
+.regulations-faq {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.faq-question {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.faq-icon {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.faq-answer {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-answer p {
+  padding-bottom: 20px;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media screen and (max-width: 992px) {
+  .regulations-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .regulations-image {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .regulations-intro,
+  .main-regulations,
+  .other-regulations,
+  .amendments-section,
+  .regulations-faq {
+    padding: 60px 0;
+  }
+
+  .amendments-table th,
+  .amendments-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .regulation-card {
+    padding: 20px;
+  }
+
+  .faq-question {
+    padding: 15px;
+  }
+
+  .faq-question h3 {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    padding: 0 15px;
+  }
+}
